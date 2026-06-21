@@ -52,7 +52,6 @@
         }
 
         h1, h2, h3, h4, h5 {
-            color: var(--text-dark);
             font-weight: 700;
             line-height: 1.2;
         }
@@ -172,7 +171,6 @@
 
         .nav-links a {
             font-weight: 500;
-            color: var(--text-dark);
             transition: var(--transition);
             font-size: 1rem;
         }
@@ -547,9 +545,9 @@
 
         .nr-summary {
             display: grid;
-            grid-template-columns: 1.1fr 1.9fr;
             gap: 24px;
             align-items: center;
+            text-align: center;
             background: linear-gradient(135deg, var(--primary), var(--primary-hover));
             color: var(--secondary);
             padding: 34px;
@@ -574,8 +572,8 @@
         .nr-tags {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 10px;
-            justify-content: flex-end;
         }
 
         .nr-tags span {
@@ -679,6 +677,7 @@
             border-radius: 14px;
             padding: 22px 26px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: space-between;
             gap: 20px;
